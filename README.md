@@ -75,6 +75,16 @@ We provide jupyter notebooks to demonstrate how to use MONET for automatic conce
 - Model auditing: `tutorial/model_auditing.ipynb`
 - Inherently interpretable model building: `tutorial/inherently_interpretable_model_building.ipynb`
 
+### Quick demo script
+
+To sanity check your environment, you can run a small zero-shot classification demo against an image in the repository root (for example `test.jpg`). The script downloads the MONET weights from Hugging Face on first run.
+
+```bash
+python scripts/demo_inference.py test.jpg --top-k 5
+```
+
+Use `--labels` with a comma-separated list to supply your own candidate concepts.
+
 ## MONET Training data
 
 For code to download and preprocess the training data, please refer to the following scripts:
